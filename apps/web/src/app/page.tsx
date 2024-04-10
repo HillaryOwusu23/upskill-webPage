@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import {TextComponent} from "../../../../packages/ui/index"
+import { TextComponent } from '@repo/ui/index'
 export default function Home() {
   return (
     <main className={styles.main}>

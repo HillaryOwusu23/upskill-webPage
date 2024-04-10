@@ -9,10 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@repo/ui":"*",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.1.4",
-    "ui":"*"
+    "next": "14.1.4"
+    
   },
   "devDependencies": {
     "@repo/eslint-config": "*",
