@@ -1,8 +1,11 @@
-const Page = ()=> {
+import Link from "next/link";
+import { TextComponent } from "@repo/ui";
+export default function Home() {
   return (
-    <main >
-      
-    </main>
+    <div>
+      <h1>Home</h1>
+      <Link href="/about">About</Link>
+      <TextComponent content="Hello World" />
+    </div>
   );
 }
-export default Page;
