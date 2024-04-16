@@ -26,10 +26,20 @@ module.exports = {
       },
     },
   },
+ 
   ignorePatterns: [
     // Ignore dotfiles
     ".*.js",
     "node_modules/",
   ],
   overrides: [{ files: ["*.js?(x)", "*.ts?(x)"] }],
+  rules: {
+    // Add the specific rules here
+    quotes: ["error", "single"], // enforce single quotes
+    "@typescript-eslint/semi": ["error", "never"], // enforce no semicolons for TypeScript
+    "no-empty-function": "error", // enforce no empty functions
+    "no-unused-vars": "error", // enforce no unused imports
+    "no-console": "error", // disallow console.log() and similar methods
+    "@typescript-eslint/no-explicit-any": "error", // disallow the use of 'any' type
+  },
 };
