@@ -1,16 +1,14 @@
 /* eslint-disable no-undef */
-/* eslint-disable quotes */
 import "@testing-library/jest-dom";
 import { render, screen } from "@testing-library/react";
-import  Home from "../app/page"
+import { TextComponent } from "../src/Text";
 
 
 describe("Page", () => {
   it("renders a heading", () => {
-    render(<Home />);
+    render(<TextComponent content={"Hello"} />);
 
-    const heading = screen.getByRole("heading",{name:"Home"});
+    const heading = screen.getByText(/Hello/i);
 
     expect(heading).toBeInTheDocument();
-  });
-});
+  })});
