@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-undef
 module.exports = {
   // Specify the test environment
   testEnvironment: "jest-environment-jsdom",

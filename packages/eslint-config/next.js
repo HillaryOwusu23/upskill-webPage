@@ -26,11 +26,13 @@ module.exports = {
       },
     },
   },
- 
+
   ignorePatterns: [
     // Ignore dotfiles
     ".*.js",
     "node_modules/",
+    ".json",
+    "config.ts"
   ],
   overrides: [{ files: ["*.js?(x)", "*.ts?(x)"] }],
   rules: {
