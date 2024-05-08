@@ -4,6 +4,7 @@
   "scripts": {
     "build": "turbo build",
     "dev": "turbo dev",
+    "dev": "dotenv -- turbo run dev",
     "lint": "turbo lint",
     "test": "jest",
     "test:coverage": "jest --coverage",
@@ -28,5 +29,8 @@
   "workspaces": [
     "apps/*",
     "packages/*"
-  ]
+  ],
+  "dependencies": {
+    "dotenv-cli": "^7.4.1"
+  }
 }
